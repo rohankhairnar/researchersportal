@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/rohan_assignment2">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/NBAD" password="applied123" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql://murachdb1.cpk9g4yipxpc.us-west-2.rds.amazonaws.com:3306/NBAD" username="rohankhairnar1"/>
+</Context>
+

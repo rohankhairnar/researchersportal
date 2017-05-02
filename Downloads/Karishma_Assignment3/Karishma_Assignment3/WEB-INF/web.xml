@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>murach.controller.UserController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudyController</servlet-name>
+        <servlet-class>murach.controller.StudyController</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>EmailController</servlet-name>
+        <servlet-class>murach.controller.EmailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendController</servlet-name>
+        <servlet-class>murach.controller.SendController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/UserController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudyController</servlet-name>
+        <url-pattern>/StudyController</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>EmailController</servlet-name>
+        <url-pattern>/EmailController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendController</servlet-name>
+        <url-pattern>/SendController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
